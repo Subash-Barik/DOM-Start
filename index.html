@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        input{
+            padding: 1px;
+            width: 500px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body><br><br><br>
+    <form action="#" onsubmit="regester(event)">
+        <label style="color: orangered; font-size: 20px;"> <b>Book a call</b></label><br><br>
+        <label style="font-size: 16px;"> Book a call slot and our representative will call you within 1hr of selected time</label><br>
+        <hr>
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="email">Email</label><br>
+        <input type="email"><br><br>
+        <label for="phone">Phone</label><br><br>
+        <input type="number" ><br><br>
+        <label for="time for call">Time for call</label><br>
+        <input type="date" style="width: 245px;" name="date1">
+        <input type="time" style="width: 245px;" name="time1"><br><br>
+        <input type="submit" value="GET A CALL" style="background-color: orangered" br>
+
+
+
+
+
+
+    </form>
+
+    <script>
+         function register(event)
+        {
+           console.log(event.target.name.value);
+           console.log(event.target.email.value);
+           console.log(event.target.mnumber.value);
+           console.log(event.target.date1.value);
+           console.log(event.target.time1.value);
+
+        }
+    </script>
+    
+</body>
+</html>
